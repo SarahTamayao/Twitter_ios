@@ -9,28 +9,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginViewController-->
         <scene sceneID="cSM-Pp-6dm">
             <objects>
-                <viewController id="FKB-on-O92" sceneMemberID="viewController">
+                <viewController title="LoginViewController" id="FKB-on-O92" customClass="LoginViewController" customModule="Twitter" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BuP-Wi-9RM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDw-nN-F4E">
-                                <rect key="frame" x="121" y="296" width="132" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDw-nN-F4E">
+                                <rect key="frame" x="122.5" y="298.5" width="130" height="70"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6x2-bf-pqp"/>
+                                    <constraint firstAttribute="width" constant="130" id="hZx-Cw-XuR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                     <color key="titleShadowColor" systemColor="systemBlueColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLogicButton:" destination="FKB-on-O92" eventType="touchUpInside" id="48i-ZW-Dxf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Awk-vV-86v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bDw-nN-F4E" firstAttribute="centerY" secondItem="BuP-Wi-9RM" secondAttribute="centerY" id="DbI-Iz-Q3X"/>
+                            <constraint firstItem="bDw-nN-F4E" firstAttribute="centerX" secondItem="BuP-Wi-9RM" secondAttribute="centerX" id="tvc-E6-2h6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="KUp-n4-OR3" kind="presentation" identifier="loginToHome" id="Pw3-SN-Fpz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLJ-8h-18r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +54,7 @@
             <objects>
                 <tableViewController id="Vv7-4d-jyr" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EXH-92-nF7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -63,14 +76,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzU-B7-PWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="33"/>
+            <point key="canvasLocation" x="1503" y="33"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BsK-Ql-LMf">
             <objects>
                 <navigationController id="KUp-n4-OR3" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TNx-lC-sCT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -79,7 +92,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bNU-d9-dVo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="33"/>
+            <point key="canvasLocation" x="790" y="33"/>
         </scene>
     </scenes>
     <resources>

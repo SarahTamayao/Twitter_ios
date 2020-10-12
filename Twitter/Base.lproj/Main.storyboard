@@ -117,6 +117,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" id="rWD-oX-lzv">
                             <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                            <connections>
+                                <segue destination="p3a-ev-NHO" kind="presentation" id="ENa-ix-iLP"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
@@ -129,11 +132,11 @@
             <objects>
                 <viewController id="0dc-5e-i9U" customClass="TweetViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FVK-gV-xwb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gpJ-7d-feB">
-                                <rect key="frame" x="67" y="44" width="240" height="128"/>
+                                <rect key="frame" x="67" y="56" width="241" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="h3I-Y4-WhX"/>
@@ -146,12 +149,10 @@
                         <viewLayoutGuide key="safeArea" id="ZLf-E6-gwa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZLf-E6-gwa" firstAttribute="trailing" secondItem="gpJ-7d-feB" secondAttribute="trailing" constant="68" id="0AY-2w-gOn"/>
-                            <constraint firstItem="gpJ-7d-feB" firstAttribute="leading" secondItem="ZLf-E6-gwa" secondAttribute="leading" constant="67" id="4vz-xp-np0"/>
                             <constraint firstItem="gpJ-7d-feB" firstAttribute="top" secondItem="ZLf-E6-gwa" secondAttribute="top" id="BlH-H5-sF4"/>
                             <constraint firstItem="gpJ-7d-feB" firstAttribute="top" secondItem="ZLf-E6-gwa" secondAttribute="top" id="EQk-T3-oyf"/>
-                            <constraint firstItem="gpJ-7d-feB" firstAttribute="leading" secondItem="ZLf-E6-gwa" secondAttribute="leading" id="YCv-xZ-XZl"/>
-                            <constraint firstItem="ZLf-E6-gwa" firstAttribute="trailing" secondItem="gpJ-7d-feB" secondAttribute="trailing" id="iVL-S3-bNB"/>
+                            <constraint firstItem="gpJ-7d-feB" firstAttribute="centerX" secondItem="FVK-gV-xwb" secondAttribute="centerX" id="bcz-1x-HuW"/>
+                            <constraint firstItem="gpJ-7d-feB" firstAttribute="leading" secondItem="ZLf-E6-gwa" secondAttribute="leading" constant="67" id="kjH-Qw-UQs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="35k-TR-iNk">
@@ -199,7 +200,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p3a-ev-NHO" userLabel="Tweet Nav Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d9a-yl-nw6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" systemColor="linkColor"/>
                     </navigationBar>

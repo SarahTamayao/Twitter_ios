@@ -58,11 +58,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="190" id="wof-sa-gk3" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="190"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="150" id="wof-sa-gk3" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wof-sa-gk3" id="fZG-UA-EFO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K9g-g4-Sso">
@@ -73,7 +73,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Author" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj7-2l-jXF">
-                                            <rect key="frame" x="93" y="19" width="258" height="18"/>
+                                            <rect key="frame" x="97" y="19" width="254" height="18"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -103,7 +103,7 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOh-vn-0an">
-                                            <rect key="frame" x="93" y="45" width="274" height="20.5"/>
+                                            <rect key="frame" x="97" y="45" width="270" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -117,9 +117,9 @@
                                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ATs-1J-RDB" secondAttribute="bottom" constant="8" id="JLf-wL-7v1"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="qj7-2l-jXF" secondAttribute="trailing" constant="8" id="MAL-ND-2Dg"/>
                                         <constraint firstItem="0uo-87-b1h" firstAttribute="top" secondItem="hOh-vn-0an" secondAttribute="bottom" constant="8" id="OTk-ea-E7S"/>
-                                        <constraint firstItem="hOh-vn-0an" firstAttribute="leading" secondItem="K9g-g4-Sso" secondAttribute="trailing" constant="4" id="ULF-gr-9Sk"/>
+                                        <constraint firstItem="hOh-vn-0an" firstAttribute="leading" secondItem="K9g-g4-Sso" secondAttribute="trailing" constant="8" id="ULF-gr-9Sk"/>
                                         <constraint firstItem="hOh-vn-0an" firstAttribute="top" secondItem="qj7-2l-jXF" secondAttribute="bottom" constant="8" id="iKF-nr-6q0"/>
-                                        <constraint firstItem="qj7-2l-jXF" firstAttribute="leading" secondItem="K9g-g4-Sso" secondAttribute="trailing" constant="4" id="lY5-Dx-HwS"/>
+                                        <constraint firstItem="qj7-2l-jXF" firstAttribute="leading" secondItem="K9g-g4-Sso" secondAttribute="trailing" constant="8" id="lY5-Dx-HwS"/>
                                         <constraint firstItem="ATs-1J-RDB" firstAttribute="leading" secondItem="0uo-87-b1h" secondAttribute="trailing" constant="16" id="nWa-Zp-OMq"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="ATs-1J-RDB" secondAttribute="trailing" constant="8" id="nav-p1-5IP"/>
                                         <constraint firstItem="K9g-g4-Sso" firstAttribute="top" secondItem="fZG-UA-EFO" secondAttribute="topMargin" constant="8" id="tgD-5x-A72"/>

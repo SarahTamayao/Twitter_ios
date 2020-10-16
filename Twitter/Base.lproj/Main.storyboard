@@ -146,7 +146,7 @@
                                 <action selector="onLogout:" destination="Vv7-4d-jyr" id="hxx-RM-aE0"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="rWD-oX-lzv">
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" image="edit-icon" id="rWD-oX-lzv">
                             <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                             <connections>
                                 <segue destination="p3a-ev-NHO" kind="presentation" id="ENa-ix-iLP"/>
@@ -249,6 +249,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="edit-icon" width="30" height="27"/>
         <image name="favor-icon" width="30" height="30"/>
         <image name="retweet-icon" width="30" height="30"/>
         <systemColor name="labelColor">
